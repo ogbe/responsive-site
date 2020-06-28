@@ -1,0 +1,224 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  margin: 0;
+  text-align: center;
+}
+
+.container header {
+  color: #FFFFFF;
+}
+
+.container header .display--image {
+  position: absolute;
+  background-color: #333333;
+  background: url("../images/pexels-photo-248515.png") center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.container header h1, .container header p {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  margin: 0;
+}
+
+.container header h1 {
+  text-transform: capitalize;
+  padding: 100px 100px 0;
+}
+
+.container header p {
+  padding: 20px 50px;
+}
+
+.container header a {
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 20px 40px;
+  margin: 30px 0 100px;
+  color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  display: inline-block;
+}
+
+.container header a:hover {
+  color: #333333;
+  background-color: #EAEAEA;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+
+main .section--a {
+  background-color: #EAEAEA;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr (minmax(auto, 25em))[2] 1fr;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  color: #333333;
+  padding-bottom: 30px;
+}
+
+main .section--a h1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  padding: 50px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+main .section--a p {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  line-height: 35px;
+  -webkit-columns: 2;
+          columns: 2;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+}
+
+@media (max-width: 600px) {
+  main .section--a p {
+    -webkit-columns: auto;
+            columns: auto;
+  }
+}
+
+main #card--section {
+  background-color: #333333;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr (minmax(auto, 25em))[2] 1fr;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+}
+
+main ul {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #333333;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+}
+
+@media (max-width: 600px) {
+  main ul {
+    display: block;
+  }
+}
+
+main ul li {
+  background-color: #EAEAEA;
+  width: 31%;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  main ul li {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+main ul li img {
+  width: 100%;
+}
+
+main ul li h3 {
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+main ul li p {
+  line-height: 1.5;
+  padding: 10px;
+}
+
+main .single__column {
+  padding: 30px;
+}
+
+main .single__column h1 {
+  padding: 30px;
+}
+
+main .single__column p {
+  -webkit-columns: auto;
+          columns: auto;
+}
+
+main .box__section {
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  main .box__section {
+    display: block;
+  }
+}
+
+main .box__element {
+  grid-column: span 2;
+  background: #333333;
+  color: #FFFFFF;
+}
+
+main .box__element h2 {
+  text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+  main .box__element h2 {
+    margin: 0;
+    padding: 30px;
+  }
+}
+
+main .box__element p {
+  -webkit-columns: auto;
+          columns: auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 600px) {
+  main .box__element p {
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+main .blue__element {
+  background-color: #2690D4;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #000000;
+  padding: 20px 0;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+
+footer a {
+  text-decoration: none;
+  color: #2690D4;
+}
+/*# sourceMappingURL=main.css.map */
